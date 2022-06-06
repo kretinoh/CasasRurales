@@ -1,0 +1,102 @@
+*{
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(../img/imagen-lago.jpg);
+  background-attachment: cover;
+}
+.button-container{
+  display: inline-block;
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  text-align: center;
+}
+
+.button-container .content{
+  position: absolute;
+  bottom: 35%;
+  right: 3em;
+  left: 3em;
+  padding: 3px 15px;
+  color: var(--primary-text-color);
+  background: var(--divider-color);
+} 
+.content a{
+  padding: 15px 15px;
+  background: var(--accent-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-primary-color);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* SLIDER */
+.container{
+  margin: 15px 5px;
+  max-width: 98vw;
+  width: 100%;
+  height: 300px;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.image-box{
+  display: flex;
+  height: 100%;
+  width: 400%;
+  justify-content: space-between;
+  animation: imgBox 15s linear infinite;
+}
+@keyframes imgBox{
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -300%;
+  }
+}
+.image-box .image{
+  width: calc(100% - 100px);
+  height: 100%;
+}
+.image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* TABLETS */
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  .image-box{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    justify-content: space-between;
+    animation: imgBox 20s linear infinite;
+  }
+
+}
+/* ORDENADORES */
+@media only screen and (min-width: 1025px) {
+  .image-box{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    justify-content: space-between;
+    animation: imgBox 30s linear infinite;
+  }
+}
+:root {
+  --dark-primary-color: #388e3c;
+  --default-primary-color: #4caf50;
+  --light-primary-color: #c8e6c9;
+  --text-primary-color: #ffffff;
+  --accent-color: #795548;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+}
