@@ -7,6 +7,7 @@
 body{
   background: url(../img/imagen-lago.jpg);
   background-attachment: cover;
+  overflow-x: hidden;
 }
 .button-container{
   display: inline-block;

@@ -92,7 +92,7 @@ header nav {
   border-top: 5px solid var(--accent-color);
   text-transform: uppercase;
   padding: 30px 33px 70px;
-  margin: 0 auto;
+  margin: 0 50px;
   background: url(../img/campo.jpg) no-repeat 0px 0px;
   background-size: cover;
   background-position: center;
@@ -131,23 +131,6 @@ form p{
 }
 
 /* ASIDE */
-.btn{
-  border: none;
-  outline: none;
-  padding: 5px 10px;
-  margin: 4px;
-  background-color: var(--dark-primary-color);
-  cursor: pointer;
-}
-.btn:hover{
-  background-color: var(--accent-color);
-  color: var(--text-primary-color);
-}
-.btn.active{
-  background-color: #666;
-  color: var(--text-primary-color);
-
-}
 #filters{
   margin: 15px;
 }
@@ -183,7 +166,7 @@ button{
   font-size: 18px;
 }
 button a{
-  color: var(--primary-text-color);
+  color: var(--text-primary-color);
   text-decoration: none;
 }
 
