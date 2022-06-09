@@ -92,9 +92,10 @@ header nav {
   background-color: var(--divider-color);
   border: 1px solid black;
   width: 100vw;
-  height: 15vh;
+  height: 14vh;
   display: flex;
   padding: 4px;
+  text-align: center;
 }
 .aside input[type="date"]{
   background-color: var(--default-primary-color);
@@ -105,6 +106,7 @@ header nav {
   outline: none;
   border-radius: 5px;
   width: 48vw;
+  margin: 2px;
 }
 ::-webkit-calendar-picker-indicator{
   background-color: var(--text-primary-color);
@@ -148,38 +150,40 @@ header nav {
   scroll-snap-align: center;
 }
 .info h1{
-  font-size: 23px;
   margin-top: 12px;
-  margin-bottom: 0px;
+  margin-bottom: 7px;
 }
 .info .localizacion{
   font-style: italic;
+  margin-bottom: 15px;
 }
 .card-principal .propiedades{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 .propiedades p{
-  width: 50%;
+  padding-left: 10%;
+  flex: 40%;
   margin: 10px 0px;
-  margin-bottom: 20px;
 }
 h2{
   padding-left: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .card-precios{
   border: 1px solid black;
   border-radius: 5px;
   margin: 0px 15px;
   margin-bottom: 10px;
-  background-color: var(--accent-color);
-  color: #f3f3f3;
+  color: var(--primary-text-color);
   font-weight: lighter;
 }
 .precios-info{
   padding: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 .precios-info h4{
   font-weight: 100;
@@ -191,13 +195,19 @@ h2{
   font-size: 18px;
 }
 .descripcion-card{
+  margin-top: 20px;
   padding: 0px 15px;
   border-radius: 5px;
   text-align: justify;
   margin-bottom: 40px;
 }
+.iframe-container{
+  text-align: center;
+}
 
-
+iframe{
+  width: 60vw;
+}
 
 /* FOOTER */
 footer {
@@ -226,7 +236,6 @@ footer div {
     "slider slider slider"
     "footer footer footer";
     grid-template-rows: repeat(3,auto);
-
   }
   header{
     grid-area: header;
